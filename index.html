@@ -3,137 +3,167 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>MSI서비스센터 | MSI 노트북 전문 수리센터</title>
+  <meta name="referrer" content="origin" />
+  <title>Synology 나스AS서버 데이터복구 센터 </title>
   <link rel="stylesheet" href="style.css" />
-  <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DSXPLG5Z38"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'G-DSXPLG5Z38', { send_page_view: true });
-</script>
-
-<!-- Microsoft Clarity -->
-<script>
-  (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "tyjzj2q12k");
-</script>
 </head>
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <div class="brand">
-      <div class="brand-row">
-        <img src="msi-logo.jpg" class="brand-logo" alt="MSI 로고">
-        <div class="brand-title">MSI서비스센터</div>
+
+  <!-- 상단 고정 헤더 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-row">
+          <img src="lenovo-logo.jpg" alt="Lenovo 로고" class="brand-logo" />
+          <div class="brand-title">나스AS서버 데이터복구 센터</div>
+        </div>
+        <div class="brand-desc"> NAS / 서버 전문 수리 · 점검 </div>
       </div>
-      <div class="brand-desc">MSI 노트북 / PC 전문 수리</div>
+
+      <div class="call-box">
+        <div class="call-label">대표번호</div>
+        <a class="call-number" href="tel:15446068">1544-6068</a>
+      </div>
+
+      <a class="call-button" href="#request-form">상담하기</a>
     </div>
-    <div class="call-box">
-      <div class="call-label">대표번호</div>
-      <a class="call-number" href="tel:15446068">1544-6068</a>
+  </header>
+
+  <!-- 히어로 섹션 -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="container hero-inner">
+        <div class="hero-left-block">
+          <div class="hero-headline-row">
+            <div class="headline-text">
+              Synology NAS / 서버 전문 수리센터
+            </div>
+          </div>
+
+          <p class="hero-sub">
+            당일 점검 · 방문 접수 · 택배 수리 지원<br />
+            정품 부품 / 합리적인 비용으로 신속하게 해결합니다.
+          </p>
+
+          <div class="hero-actions">
+            <a class="hero-call" href="#request-form">온라인 접수 바로가기</a>
+            <a class="hero-goform" href="tel:15446068">수리 접수하기</a>
+            <a class="headline-call" href="tel:15446068">📞 1544-6068</a>
+          </div>
+
+          <ul class="hero-highlights">
+            <li>데이터 복구 / 권한 문제 / 공유 폴더 오류</li>
+            <li>디스크 불량 / 볼륨 손상 / RAID 장애</li>
+            <li>펌웨어 / DSM 업데이트 / 네트워크 설정</li>
+            <li>서버 복구 / 백업</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <a class="call-button" href="#request-form">상담하기</a>
-  </div>
-</header>
+  </section>
 
-<section class="hero">
-  <div class="hero-overlay">
-    <div class="container hero-inner">
-      <div class="hero-left-block">
-        <div class="hero-headline-row">
-          <div class="headline-text">MSI 노트북 / 데스크탑 전문 수리센터</div>
-        </div>
-        <p class="hero-sub">당일 점검 · 방문 접수 · 택배 수리 지원<br/>정품 부품 / 합리적인 비용으로 신속하게 해결합니다.</p>
+  <!-- 주요 수리 서비스 -->
+  <section class="services">
+    <div class="container">
+      <h2>주요 수리 서비스</h2>
+      <p class="section-desc">
+        다음과 같은 NAS / 서버 장애에 대해 전문 진단과 복구 서비스를 제공합니다.
+      </p>
 
-        <div class="hero-actions">
-          <a class="hero-call" href="#request-form">온라인 접수 바로가기</a>
-          <a class="hero-goform" href="tel:15446068">수리 접수하기</a>
-          <a class="headline-call" href="tel:15446068">📞 1544-6068</a>
-        </div>
+      <div class="service-grid">
+        <div class="service-item"><div class="icon">💻</div><div class="title">부팅 불가 / 접근 불가</div><div class="desc">DSM 접속 불가, 부팅 불가, 웹콘솔 오류 등.</div></div>
+        <div class="service-item"><div class="icon">🖥️</div><div class="title">디스크 / RAID 장애</div><div class="desc">디스크 불량, RAID 분리, 볼륨 오류 등.</div></div>
+        <div class="service-item"><div class="icon">🔥</div><div class="title">데이터 복구</div><div class="desc">삭제, NAS 인식 불가, 파일 시스템 손상 복구.</div></div>
+        <div class="service-item"><div class="icon">⚡</div><div class="title">네트워크 문제</div><div class="desc">공유폴더, 권한, 클라우드 동기화 오류.</div></div>
+      </div>
+    </div>
+  </section>
 
-        <ul class="hero-highlights">
-          <li>부팅 불가 / 전원 불량</li>
-          <li>액정 파손 / 화면깨짐</li>
-          <li>발열 / 팬소음 / 써멀관리</li>
-          <li>데이터 복구 / 백업</li>
+  <!-- 온라인 접수 폼 -->
+  <section class="request-section" id="request-form">
+    <div class="container request-inner">
+      <div class="request-info">
+        <h2>수리 / 점검 접수</h2>
+        <p class="section-desc">
+          성함과 연락처만 남겨주시면 담당자가 빠르게 연락드립니다.
+        </p>
+
+        <ul class="request-highlights">
+          <li>정품 기준 사전 안내 후 진행</li>
+          <li>출장 / 택배 / 방문 접수 가능</li>
+          <li>데이터 보안 최우선</li>
         </ul>
+
+        <div class="request-callout">
+          📞 바로 상담:
+          <a href="tel:15446068">1544-6068</a>
+        </div>
+      </div>
+
+<form class="request-form-card" id="serviceForm">
+  <div class="form-head">온라인 접수 / 문의</div>
+
+  <div class="form-group">
+    <label for="custName">성함</label>
+    <input id="custName" name="성함" type="text" required />
+  </div>
+
+  <div class="form-group">
+    <label for="custPhone">연락처</label>
+    <input id="custPhone" name="연락처" type="tel" required />
+  </div>
+
+  <div class="form-group">
+    <label for="custArea">지역 / 주소</label>
+    <input id="custArea" name="지역/주소" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="issueType">고장 증상</label>
+    <select id="issueType" name="고장 증상">
+      <option>부팅 불가 / 접근 불가</option>
+      <option>디스크 오류 / RAID 장애</option>
+      <option>데이터 복구 요청</option>
+      <option>네트워크 / 공유 폴더 문제</option>
+      <option>기타</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="issueDetail">상세 증상</label>
+    <textarea id="issueDetail" name="상세 설명" rows="4"></textarea>
+  </div>
+
+  <button type="submit" class="submit-btn">접수 요청하기</button>
+
+  <div class="form-note">
+    접수 즉시 확인 후 연락드립니다.
+  </div>
+</form>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <div class="footer-brand">Computer Service Center</div>
+        <div class="footer-line">대표번호 : <a href="tel:15446068">1544-6068</a></div>
+        <div class="footer-line">이메일 : <a href="mailto:noteservice@outlook.kr">noteservice@outlook.kr</a></div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-line">사업자등록번호 : 662-07-03217</div>
+        <div class="footer-line">대표자 : 최창식</div>
       </div>
     </div>
+  </footer>
+
+  <div class="submit-success" id="submitSuccess">
+    접수되었습니다. 전문 엔지니어가 빠르게 연락드리겠습니다.<br>
+    급하신 경우 1544-6068 로 연락 주세요.
   </div>
-</section>
 
-<section class="services">
-  <div class="container">
-    <h2>주요 수리 서비스</h2>
-    <p class="section-desc">다음과 같은 증상은 수리/부품 교체로 대부분 복구 가능합니다.</p>
-    <div class="service-grid">
-      <div class="service-item"><div class="icon">💻</div><div class="title">부팅 불가 / 전원 안 켜짐</div><div class="desc">전원 버튼 반응 없음, 반복 재부팅, 로고에서 멈춤 등.</div></div>
-      <div class="service-item"><div class="icon">🖥️</div><div class="title">액정 / 패널 파손</div><div class="desc">화면 깨짐, 줄감, 화면 안 나옴. 노트북 패널 교체 가능.</div></div>
-      <div class="service-item"><div class="icon">🔥</div><div class="title">발열 / 팬소음</div><div class="desc">과열로 꺼짐, 소음 심함, 프레임 드랍. 써멀 재도포/쿨링 청소.</div></div>
-      <div class="service-item"><div class="icon">⚡</div><div class="title">충전/배터리 문제</div><div class="desc">충전 안 됨, 배터리 급방전, 잭 접촉 불량 등.</div></div>
-    </div>
-  </div>
-</section>
-
-<section class="request-section" id="request-form">
-  <div class="container request-inner">
-    <div class="request-info">
-      <h2>수리 / 점검 접수</h2>
-      <p class="section-desc">성함과 연락처만 남겨주시면 담당자가 빠르게 연락드립니다. 전화 상담이 가장 빠르며, 택배/출장 요청도 가능합니다.</p>
-      <ul class="request-highlights">
-        <li>MSI 노트북/PC 전용 진단</li>
-        <li>정품 또는 동급 규격 부품 사용</li>
-        <li>사전 안내 후 진행 (무단 수리 없음)</li>
-      </ul>
-      <div class="request-callout">📞 바로 상담: <a href="tel:15446068">1544-6068</a></div>
-    </div>
-
-    <form class="request-form-card" id="serviceForm">
-      <div class="form-head">온라인 접수 / 문의</div>
-      <div class="form-group"><label for="custName">성함</label><input id="custName" name="성함" type="text" placeholder="예) 홍길동" required></div>
-      <div class="form-group"><label for="custPhone">연락처</label><input id="custPhone" name="연락처" type="tel" placeholder="예) 010-1234-5678" required></div>
-      <div class="form-group"><label for="custArea">지역 / 주소(동까지)</label><input id="custArea" name="지역/주소" type="text" placeholder="예) Gasan-dong / 택배 접수 원함"></div>
-      <div class="form-group"><label for="issueType">고장 증상</label>
-        <select id="issueType" name="고장 증상">
-          <option>부팅 불가 / 전원 안 켜짐</option>
-          <option>액정 파손 / 화면 불량</option>
-          <option>발열 / 팬 소음</option>
-          <option>데이터 복구 요청</option>
-          <option>충전 / 배터리 문제</option>
-          <option>기타</option>
-        </select>
-      </div>
-      <div class="form-group"><label for="issueDetail">상세 증상 (선택)</label><textarea id="issueDetail" name="상세 설명" rows="4" placeholder="예) 전원 켜지다가 바로 꺼집니다. 액정에 세로줄이 생겼어요 등"></textarea></div>
-      <button type="submit" class="submit-btn">접수 요청하기</button>
-      <div class="form-note">접수하시면 확인후 빠른 연락드리겠습니다.<br/>빠른 상담은 1544-6068 로 전화 주세요.</div>
-    </form>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-col">
-      <div class="footer-brand">Computer Service Center</div>
-      <div class="footer-line">대표번호 : <a class="footer-tel" href="tel:15446068">1544-6068</a></div>
-      <div class="footer-line">관리자 : <a class="footer-tel" href="tel:0226003666">02-2600-3666</a></div>
-      <div class="footer-line">이메일 : <a class="footer-tel" href="mailto:noteservice@outlook.kr">noteservice@outlook.kr</a></div>
-      <div class="footer-line">주소 : 687 Gasan-dong, Geumcheon-gu, Seoul</div>
-      <div class="footer-line">영업시간 : 08:00 ~ 20:00</div>
-    </div>
-    <div class="footer-col">
-      <div class="footer-line">사업자등록번호 : 662-07-03217</div>
-      
-      <div class="footer-line">ⓒ Computer Service Center. All Rights Reserved.</div>
-    </div>
-  </div>
-</footer>
-
-<div class="submit-success" id="submitSuccess" style="display:none;">접수되었습니다. 전문 엔지니어가 빠르게 연락드리겠습니다.<br/>급하신 경우 1544-6068 로 바로 문의 주시면 우선 상담 도와드립니다.</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -18,18 +18,15 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // ⭐ 제출 즉시 팝업 표시
     if (successBox) {
-      successBox.style.display = "block";
+      successBox.classList.add("show");
     }
 
-    // ⭐ 폼 초기화
     form.reset();
 
-    // ⭐ MSI 전용 Google Apps Script로 백그라운드 전송 (CORS 무력화)
-    fetch("https://script.google.com/macros/s/AKfycbwNI91_0n_4Y5vQiH72u3WNAm9q5zq0HsIwBx6Sb-sX_OJLMS40OyIuK-YjkaLF2AOo_Q/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbwjf9tm2i8TPL0IUrm6rYZAJp1En4OUHpzjfS6U6Gc3S16WA34drUjO7OjcbMP64TOO3g/exec", {
       method: "POST",
-      mode: "no-cors",  
+      mode: "no-cors",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         "성함": name,
@@ -41,5 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }).catch((err) => {
       console.error("전송 오류:", err);
     });
+
+    setTimeout(() => {
+      successBox.classList.remove("show");
+    }, 6000);
   });
 });
