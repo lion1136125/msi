@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     form.reset();
 
     // ⭐ MSI 전용 Google Apps Script로 백그라운드 전송 (CORS 무력화)
-    fetch("https://script.google.com/macros/s/AKfycbwNI91_0n_4Y5vQiH72u3WNAm9q5zq0HsIwBx6Sb-sX_OJLMS40OyIuK-YjkaLF2AOo_Q/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbwUpDMM-5ICsdaRjcy4RR3Eud4ZyF3oBjbB5LFZB2xZK4COUkAeBp2VgKXvN06WHTBD/exec", {
       method: "POST",
       mode: "no-cors",  
       headers: { "Content-Type": "application/json" },
